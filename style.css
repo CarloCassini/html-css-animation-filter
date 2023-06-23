@@ -177,3 +177,28 @@ iteration-count | direction | fill-mode | play-state | name */
   width: 60px;
   height: 20px;
 }
+
+.ex-12-button:hover .ex-12-top-white {
+  animation: 3s linear 0s infinite crawl-horizontal-top;
+}
+@keyframes crawl-horizontal-top {
+  50% {
+    left: calc(90% - 60px);
+  }
+  100% {
+    left: 10%;
+  }
+}
+
+.ex-12-button:hover .ex-12-bottom-white {
+  animation: 3s linear 0s infinite crawl-horizontal-bottom;
+}
+
+@keyframes crawl-horizontal-bottom {
+  50% {
+    right: calc(90% - 60px);
+  }
+  100% {
+    right: 20%;
+  }
+}
