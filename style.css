@@ -124,6 +124,27 @@
 .ex-11-icon {
   font-size: 60px;
 }
+.ex-11-icon:hover {
+  /* @keyframes duration | easing-function | delay |
+iteration-count | direction | fill-mode | play-state | name */
+  animation: 2s linear 0s infinite spin-3-4;
+
+  /* xxxshortcut */
+  /* animation-name: spin-3-4;
+  animation-duration: 2s;
+  animation-delay: 0;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; */
+}
+@keyframes spin-3-4 {
+  90% {
+    transform: rotate(0.75turn);
+  }
+  100% {
+    transform: rotate(0turn);
+  }
+}
+
 .ex-12-button,
 .ex-13-button {
   position: relative;
