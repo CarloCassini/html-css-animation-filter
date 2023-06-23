@@ -86,6 +86,12 @@
 
 .ex-8-img {
   width: 500px;
+  transition: 2s;
+}
+
+.ex-8-img:hover {
+  filter: blur(2px) sepia(1);
+  border-radius: 10px;
 }
 
 .ex-9-img {
