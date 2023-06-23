@@ -177,7 +177,6 @@ iteration-count | direction | fill-mode | play-state | name */
   width: 60px;
   height: 20px;
 }
-
 .ex-12-button:hover .ex-12-top-white {
   animation: 3s linear 0s infinite crawl-horizontal-top;
 }
@@ -200,5 +199,43 @@ iteration-count | direction | fill-mode | play-state | name */
   }
   100% {
     right: 20%;
+  }
+}
+
+.ex-13-button:hover .ex-13-top-white {
+  animation: 3s linear 0s infinite crawl-horizontal-top-all;
+}
+@keyframes crawl-horizontal-top-all {
+  50% {
+    left: calc(100% - 50px);
+    top: -10px;
+  }
+
+  90% {
+    left: calc(100% - 50px);
+    top: calc(100% - 10px);
+  }
+  100% {
+    left: calc(90% - 50px);
+    top: calc(100% - 10px);
+  }
+}
+
+.ex-13-button:hover .ex-13-bottom-white {
+  animation: 3s linear 0s infinite crawl-horizontal-bottom-all;
+}
+
+@keyframes crawl-horizontal-bottom-all {
+  50% {
+    right: calc(100% - 50px);
+    bottom: -10px;
+  }
+  90% {
+    right: calc(100% - 50px);
+    bottom: calc(100% - 10px);
+  }
+  100% {
+    right: calc(90% - 50px);
+    bottom: calc(100% - 10px);
   }
 }
